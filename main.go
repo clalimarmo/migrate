@@ -1,7 +1,7 @@
 // Package main is the CLI.
 // You can use the CLI via Terminal.
-// import "github.com/mattes/migrate/migrate" for usage within Go.
-package main
+// import "github.com/clalimarmo/migrate/migrate" for usage within Go.
+package main // import "github.com/clalimarmo/migrate"
 
 import (
 	"flag"
@@ -10,7 +10,6 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/fatih/color"
 	_ "github.com/clalimarmo/migrate/driver/bash"
 	_ "github.com/clalimarmo/migrate/driver/cassandra"
 	_ "github.com/clalimarmo/migrate/driver/mysql"
@@ -20,6 +19,7 @@ import (
 	"github.com/clalimarmo/migrate/migrate"
 	"github.com/clalimarmo/migrate/migrate/direction"
 	pipep "github.com/clalimarmo/migrate/pipe"
+	"github.com/fatih/color"
 )
 
 var url = flag.String("url", os.Getenv("MIGRATE_URL"), "")
