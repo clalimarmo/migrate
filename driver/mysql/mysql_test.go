@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mattes/migrate/file"
-	"github.com/mattes/migrate/migrate/direction"
-	pipep "github.com/mattes/migrate/pipe"
+	"github.com/clalimarmo/migrate/file"
+	"github.com/clalimarmo/migrate/migrate/direction"
+	pipep "github.com/clalimarmo/migrate/pipe"
 )
 
 // TestMigrate runs some additional tests on Migrate().

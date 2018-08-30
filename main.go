@@ -11,15 +11,15 @@ import (
 	"time"
 
 	"github.com/fatih/color"
-	_ "github.com/mattes/migrate/driver/bash"
-	_ "github.com/mattes/migrate/driver/cassandra"
-	_ "github.com/mattes/migrate/driver/mysql"
-	_ "github.com/mattes/migrate/driver/postgres"
-	_ "github.com/mattes/migrate/driver/sqlite3"
-	"github.com/mattes/migrate/file"
-	"github.com/mattes/migrate/migrate"
-	"github.com/mattes/migrate/migrate/direction"
-	pipep "github.com/mattes/migrate/pipe"
+	_ "github.com/clalimarmo/migrate/driver/bash"
+	_ "github.com/clalimarmo/migrate/driver/cassandra"
+	_ "github.com/clalimarmo/migrate/driver/mysql"
+	_ "github.com/clalimarmo/migrate/driver/postgres"
+	_ "github.com/clalimarmo/migrate/driver/sqlite3"
+	"github.com/clalimarmo/migrate/file"
+	"github.com/clalimarmo/migrate/migrate"
+	"github.com/clalimarmo/migrate/migrate/direction"
+	pipep "github.com/clalimarmo/migrate/pipe"
 )
 
 var url = flag.String("url", os.Getenv("MIGRATE_URL"), "")
